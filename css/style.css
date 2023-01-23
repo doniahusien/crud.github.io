@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.search_contact{
+    height: 20px;
+    border-radius: 14px;
+    padding: 15px 20px;
+    background:linear-gradient(130deg,#d1cde6 40%,#f5e3da)
+}
+.search_contact input{
+    border: none;
+    background-color: transparent;
+    width: 350px;
+    font-size: 17px;
+    padding-left: 15px;
+    outline: none;
+}
+.search_contact input::placeholder{
+    color: rgb(31, 31, 31);
+    padding-left: 10px;
+    border: none;
+}
+.addNew button{
+    height: 40px;
+    font-size: medium;
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    background-color: #d1cde6;
+    margin-top: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(30, 30, 30, 0.597);
+}
+img{
+    width: 150px;
+}
+.form div.addContact{
+    width: 30%;
+    padding: 25px;
+    margin: auto;
+    border-radius: 50px; 
+     margin-top: 50px;
+    text-align: center;
+    background-color: #d1cde6;
+    display: none;
+}
+.form input{
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+margin-top: 10px;
+padding: 10px 25px;
+caret-color: rgb(189, 92, 222);
+}
+.form input::placeholder{
+    font-size: medium;
+}
+.save{
+    margin: 15px;
+    width: 125px;
+    height: 40px;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #9d96c3;
+    border: 2px #f5e3da solid;
+    color: #f5e3da;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 10%;
+    left: 960px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+.close:hover{
+   color: black;
+}
+.sec_table{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+table{
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    border-radius: 45px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow:5px 5px 3px 1px rgb(206, 197, 222); /* this draws the table border  */ 
+    border-collapse:collapse;
+}
+ thead tr :first-child {
+    border-top-left-radius: 20px;
+}
+thead tr :last-child {
+    border-top-right-radius: 30px;
+}
+
+thead{
+    background-color: #9d96c3;
+    color: #f2f1f6;
+    font-weight: 200;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 22px;
+}
+th,td{
+    padding: 20px;
+    border-bottom:1px rgb(103, 103, 103) solid;
+}
+tbody tr:nth-child(even){
+    color: #605f5f;
+    background-color: #e9e6fb;
+}
+tbody tr:nth-child(odd){
+    color: #7a26b3;
+}
+.del{
+    color: rgb(164, 19, 82);
+}
+.edit{
+    color: #db44cc;
+}
+.edit:hover{
+    font-size: larger;
+}
+.edit , .del{
+    cursor: pointer;
+}
+tbody{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
